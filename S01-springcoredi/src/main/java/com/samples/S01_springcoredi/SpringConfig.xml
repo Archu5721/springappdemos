@@ -7,11 +7,8 @@
  http://www.springframework.org/schema/context
  http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean name="emp" class="com.samples.S01_springcoredi.Employee">
-		<property name="id" value="23" />
-		<property name="name" value="Steve" />
-		<property name="Companyname" value="ButterFLy" />
-	</bean>
+	<bean name="emp" class="com.samples.S01_springcoredi.Employee" p:id="1001" p:name="Mike" p:Companyname="Hero" />
+		
 
 
 </beans>
