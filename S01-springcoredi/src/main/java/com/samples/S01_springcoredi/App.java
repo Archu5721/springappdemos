@@ -7,10 +7,11 @@ public class App
 {
     public static void main( String[] args )
     {
-//        ClassPathXmlApplicationContext springContainer = new ClassPathXmlApplicationContext("com/samples/S01_springcoredi/SpringConfig.xml");
+     
+		ClassPathXmlApplicationContext springContainer = new ClassPathXmlApplicationContext("com/samples/S01_springcoredi/SpringConfig.xml");
         
-//        Employee emp = (Employee) springContainer.getBean("emp");
-//        System.out.println(emp);
+        Employee emp = (Employee) springContainer.getBean("emp");
+        System.out.println(emp);
         
 //        Hospital hp = (Hospital) springContainer.getBean("hospital");
 //        System.out.println(hp);
@@ -24,10 +25,10 @@ public class App
 //        ShoppingCart shopping = (ShoppingCart) springContainer.getBean("shopping");
 //        System.out.println(shopping);
         
-        AbstractApplicationContext  springContainer = new ClassPathXmlApplicationContext("com/samples/S01_springcoredi/SpringConfig.xml");
-        Thing thing = (Thing) springContainer.getBean("thing");
-        System.out.println(thing);
-        springContainer.registerShutdownHook();
+//        AbstractApplicationContext  springContainer = new ClassPathXmlApplicationContext("com/samples/S01_springcoredi/SpringConfig.xml");
+//        Thing thing = (Thing) springContainer.getBean("thing");
+//        System.out.println(thing);
+//        springContainer.registerShutdownHook();
         
         
     }

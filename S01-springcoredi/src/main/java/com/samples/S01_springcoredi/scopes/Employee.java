@@ -1,4 +1,4 @@
-package com.samples.S01_springcoredi;
+package com.samples.S01_springcoredi.scopes;
 
 public class Employee {
 	private int id;
