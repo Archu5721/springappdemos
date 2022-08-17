@@ -7,8 +7,10 @@
  http://www.springframework.org/schema/context
  http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean name="emp" class="com.samples.S01_springcoredi.Employee" p:id="1001" p:name="Mike" p:Companyname="Hero" />
-	<bean name="hospital" class="com.samples.S01_springcoredi.Hospital">
+	<bean name="emp" class="com.samples.S01_springcoredi.Employee"
+		p:id="1001" p:name="Mike" p:Companyname="Hero" />
+	<bean name="hospital"
+		class="com.samples.S01_springcoredi.Hospital">
 		<property name="name" value="Kaveri Hospitals" />
 		<property name="departments">
 			<list>
@@ -18,8 +20,9 @@
 			</list>
 		</property>
 	</bean>
-	
-	<bean name="cardealer" class="com.samples.S01_springcoredi.CarDealer">
+
+	<bean name="cardealer"
+		class="com.samples.S01_springcoredi.CarDealer">
 		<property name="name" value="KK Motors" />
 		<property name="models">
 			<set>
@@ -27,22 +30,25 @@
 				<value>Volvo</value>
 				<value>Hero</value>
 				<value>Honda</value>
-			    <value>Hyundai</value>
+				<value>Hyundai</value>
 			</set>
 		</property>
 	</bean>
-	<bean name="customer" class="com.samples.S01_springcoredi.Customer" p:id="101">
-		
+	<bean name="customer"
+		class="com.samples.S01_springcoredi.Customer" p:id="101">
+
 		<property name="purchase">
 			<map>
 				<entry key="2" value="Urad dal"></entry>
 				<entry key="5" value="Chilli"></entry>
 				<entry key="3" value="dhaniya"></entry>
 				<entry key="1" value="Fenugreek"></entry>
-			
-			
-			
 			</map>
 		</property>
 	</bean>
+	<bean name="item" class="com.samples.S01_springcoredi.Item"
+		p:id="101" p:name="Rice" p:price="250"  p:quantity="2.5"/>
+	
+	<bean name="shopping" class="com.samples.S01_springcoredi.ShoppingCart" p:items-ref="item" />
+
 </beans>
