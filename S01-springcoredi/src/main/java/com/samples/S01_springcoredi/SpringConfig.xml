@@ -12,14 +12,7 @@
 		<property name="address">
 			<bean class="com.samples.S01_springcoredi.Address"
 				p:houseNo="22" p:street="Nadesan Street" p:city="Chennai" />
-
-
 		</property>
-
-
-
-
-
 	</bean>
 	<bean name="hospital"
 		class="com.samples.S01_springcoredi.Hospital">
